@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature - The Bird of Happiness</title>
+    <link rel="stylesheet" href="../game-styles.css">
+    <link rel="stylesheet" href="nature.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="task-page nature-page">
+
+    <div class="nature-container">
+        <h1 class="nature-title">NATURE</h1>
+        
+        <div class="instruction">
+            <p>Arrange the words in the correct order to make a sentence:</p>
+            <p class="translation">Волки и лисы прячутся между берёзами и соснами</p>
+        </div>
+
+        <!-- Слоты для слов -->
+        <div class="sentence-container" id="sentenceContainer">
+            <div class="word-slot" data-index="0"></div>
+            <div class="word-slot" data-index="1"></div>
+            <div class="word-slot" data-index="2"></div>
+            <div class="word-slot" data-index="3"></div>
+            <div class="word-slot" data-index="4"></div>
+            <div class="word-slot" data-index="5"></div>
+            <div class="word-slot" data-index="6"></div>
+            <div class="word-slot" data-index="7"></div>
+        </div>
+
+        <!-- Слова для перетаскивания (ПЕРЕМЕШАНЫ) -->
+        <div class="words-container" id="wordsContainer">
+            <div class="word-draggable" draggable="true" data-word="hide" data-id="1">
+                <span class="word-text">hide</span>
+            </div>
+            <div class="word-draggable" draggable="true" data-word="and" data-id="2">
+                <span class="word-text">and</span>
+            </div>
+            <div class="word-draggable" draggable="true" data-word="pines" data-id="3">
+                <span class="word-text">pines</span>
+            </div>
+            <div class="word-draggable" draggable="true" data-word="Wolves" data-id="4">
+                <span class="word-text">Wolves</span>
+            </div>
+            <div class="word-draggable" draggable="true" data-word="between" data-id="5">
+                <span class="word-text">between</span>
+            </div>
+            <div class="word-draggable" draggable="true" data-word="foxes" data-id="6">
+                <span class="word-text">foxes</span>
+            </div>
+            <div class="word-draggable" draggable="true" data-word="and" data-id="7">
+                <span class="word-text">and</span>
+            </div>
+            <div class="word-draggable" draggable="true" data-word="birches" data-id="8">
+                <span class="word-text">birches</span>
+            </div>
+        </div>
+
+        <button class="check-btn" onclick="checkSentence()">
+            ✓ Check
+        </button>
+
+        <div class="result-message" id="resultMessage"></div>
+
+        <div class="navigation-buttons">
+            <a href="../index.html" class="nav-btn home">Back to menu</a>
+        </div>
+    </div>
+
+    <script src="nature.js"></script>
+</body>
+</html>

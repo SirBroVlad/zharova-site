@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafts - The Bird of Happiness</title>
+    <link rel="stylesheet" href="../game-styles.css">
+    <link rel="stylesheet" href="crafts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="task-page crafts-page">
+    <!-- Фоновое изображение -->
+    <div class="game-background">
+        <img src="./photos/glina.png" alt="The Bird of Happiness" class="bg-image">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="crafts-container">
+        <h1 class="crafts-title">CRAFTS</h1>
+        
+        <div class="exercise-box">
+            <p class="exercise-text">
+                Pottery is the 
+                <span class="dropdown-container">
+                    <select class="word-select" id="blank1">
+                        <option value="">...</option>
+                        <option value="process">process</option>
+                        <option value="clay">clay</option>
+                        <option value="temperatures">temperatures</option>
+                        <option value="pottery">pottery</option>
+                        <option value="objects">objects</option>
+                    </select>
+                </span>
+                and the products of forming vessels and other objects with 
+                <span class="dropdown-container">
+                    <select class="word-select" id="blank2">
+                        <option value="">...</option>
+                        <option value="process">process</option>
+                        <option value="clay">clay</option>
+                        <option value="temperatures">temperatures</option>
+                        <option value="pottery">pottery</option>
+                        <option value="objects">objects</option>
+                    </select>
+                </span>
+                and other raw materials, which are fired at high 
+                <span class="dropdown-container">
+                    <select class="word-select" id="blank3">
+                        <option value="">...</option>
+                        <option value="process">process</option>
+                        <option value="clay">clay</option>
+                        <option value="temperatures">temperatures</option>
+                        <option value="pottery">pottery</option>
+                        <option value="objects">objects</option>
+                    </select>
+                </span>
+                to give them a hard and durable form. The place where such wares are made by a potter is also called a 
+                <span class="dropdown-container">
+                    <select class="word-select" id="blank4">
+                        <option value="">...</option>
+                        <option value="process">process</option>
+                        <option value="clay">clay</option>
+                        <option value="temperatures">temperatures</option>
+                        <option value="pottery">pottery</option>
+                        <option value="objects">objects</option>
+                    </select>
+                </span>
+                . Pottery is made by forming a clay body into 
+                <span class="dropdown-container">
+                    <select class="word-select" id="blank5">
+                        <option value="">...</option>
+                        <option value="process">process</option>
+                        <option value="clay">clay</option>
+                        <option value="temperatures">temperatures</option>
+                        <option value="pottery">pottery</option>
+                        <option value="objects">objects</option>
+                    </select>
+                </span>
+                of a desired shape and heating them to high temperatures (600–1600 °C).
+            </p>
+        </div>
+
+        <button class="check-btn" onclick="checkAnswers()">
+            ✓ Check
+        </button>
+
+        <div class="result-message" id="resultMessage"></div>
+
+        <div class="navigation-buttons">
+            <a href="../index.html" class="nav-btn home">Back to Menu</a>
+        </div>
+    </div>
+
+    <script src="crafts.js"></script>
+</body>
+</html>

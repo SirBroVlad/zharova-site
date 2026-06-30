@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жарова Ольга Михайловна - Учитель английского языка</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Жарова О.М.</div>
+            <ul class="nav-links">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#achievements">Достижения</a></li>
+                <li><a href="#methodology">Методическая копилка</a></li>
+                <li><a href="./game/index.html" class="game-btn">Птица счастья</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Раздел Обо мне -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-image">
+                        <img src="photos/Zharova.jfif" alt="Жарова Ольга Михайловна" class="teacher-photo">
+                    </div>
+                    <div class="teacher-name-block">
+                        <h1 class="teacher-name">Жарова Ольга Михайловна</h1>
+                        <p class="teacher-position">Учитель английского языка</p>
+                        <p class="teacher-corporate">Классный руководитель корпоративного класса «Электроприбор»</p>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="quote-block">
+                        <blockquote>
+                            «Сеять разумное, доброе, вечное – это моя миссия. 
+                            А лучшая награда – это горящие глаза моих учеников»
+                        </blockquote>
+                    </div>
+                    <div class="teacher-info">
+                        <p>Я верю, что каждый ребенок уникален и способен на большие достижения. 
+                        Моя цель – не только научить английскому языку, но и воспитать личность, 
+                        готовую к вызовам современного мира.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел Достижения -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <h2 class="section-title">Мои достижения</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="photos/achievement-1.png" alt="Достижение 1" class="achievement-img" onclick="openLightbox(0)">
+                    </div>
+                    <p class="achievement-caption">Благодарность за активное участие в жизни класса</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="photos/achievement-2.png" alt="Достижение 2" class="achievement-img" onclick="openLightbox(1)">
+                    </div>
+                    <p class="achievement-caption">Грамота за добросовестный труд</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="photos/achievement-3.png" alt="Достижение 3" class="achievement-img" onclick="openLightbox(2)">
+                    </div>
+                    <p class="achievement-caption">Благодарность за активное участие в проведении форума</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="photos/achievement-4.png" alt="Достижение 4" class="achievement-img" onclick="openLightbox(3)">
+                    </div>
+                    <p class="achievement-caption">Благодарность за участие в настолькой ролевой игре</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="photos/achievement-5.png" alt="Достижение 5" class="achievement-img" onclick="openLightbox(4)">
+                    </div>
+                    <p class="achievement-caption">Благодарность за помощь в подготовке и проведении семинара</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="photos/achievement-6.png" alt="Достижение 6" class="achievement-img" onclick="openLightbox(5)">
+                    </div>
+                    <p class="achievement-caption">Диплом за учителя года</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox для просмотра фото на весь экран -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- Раздел Методическая копилка -->
+    <section id="methodology" class="methodology-section">
+        <div class="container">
+            <h2 class="section-title">Методическая копилка</h2>
+            <div class="methodology-content">
+                <div class="methodology-text">
+                    <p class="intro-text">
+                        Одно из направлений моей воспитательной практики – воспитание любви к малой родине 
+                        и профориентация – неразрывно связано с современными образовательными технологиями.
+                    </p>
+                    <p class="highlight-text">
+                        Тамбов – сердце Черноземья, и мы, учителя, закладываем фундамент кадрового роста региона. 
+                        Наши дети – наше будущее!
+                    </p>
+                    <div class="project-block">
+                        <h3>Цифровой проект «Птица счастья»</h3>
+                        <p>
+                            Это не просто набор упражнений, а геймифицированная иммерсивная среда, 
+                            в которой изучение родного края превращается в приключение.
+                        </p>
+                        <a href="./game/index.html" class="cta-button">
+                            Перейти к упражнениям
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Жарова Ольга Михайловна.</p>
+            <p class="footer-subtitle">Учитель английского языка | Классный руководитель</p>
+            <p class="footer-subtitle"></p>написать на почту: <a href="mailto:olgushok86@mail.ru" title="Написать на почту">olgushok86@mail.ru</p>
+            
+            <div class="social-links">
+                <a href="https://vk.com/id20515601" target="_blank" class="social-icon vk" title="ВКонтакте">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.785 16.241s.288-.032.435-.192c.136-.148.132-.427.132-.427s-.019-1.305.582-1.496c.593-.188 1.353 1.251 2.159 1.807.611.421 1.075.329 1.075.329l2.16-.03s1.129-.071.594-.964c-.044-.073-.312-.661-1.607-1.868-1.355-1.263-1.173-1.059.458-3.246.993-1.33 1.39-2.143 1.267-2.49-.118-.332-.848-.244-.848-.244l-2.436.015s-.18-.025-.315.056c-.131.079-.216.263-.216.263s-.387 1.03-.903 1.906c-1.089 1.849-1.524 1.947-1.702 1.832-.414-.267-.31-1.074-.31-1.648 0-1.79.271-2.537-.529-2.73-.266-.064-.461-.106-1.14-.113-.87-.009-1.606.003-2.023.207-.277.136-.491.439-.361.456.161.021.525.098.718.362.249.34.24 1.102.24 1.102s.143 2.109-.334 2.37c-.327.179-.776-.186-1.739-1.854-.493-.855-.865-1.8-.865-1.8s-.072-.176-.2-.271c-.155-.115-.372-.151-.372-.151l-2.315.015s-.348.01-.476.161c-.114.135-.009.413-.009.413s1.816 4.244 3.871 6.383c1.884 1.963 4.024 1.834 4.024 1.834h.97z"/>
+                    </svg>
+                </a>
+                
+
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
