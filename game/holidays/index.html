@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holidays - The Bird of Happiness</title>
+    <link rel="stylesheet" href="../game-styles.css">
+    <link rel="stylesheet" href="holidays.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="task-page holidays-page">
+    <!-- Первый слайд - текст -->
+    <div id="introSlide" class="intro-slide">
+        <div class="game-background">
+            <img src="./photos/bird-background1.png" alt="The Bird of Happiness" class="bg-image">
+            <div class="overlay"></div>
+        </div>
+        
+        <div class="intro-content">
+            <h1 class="intro-title">HOLIDAYS</h1>
+            <div class="intro-text">
+                <p>Vishnevarovo is not just a holiday, it is an immersion in the atmosphere of ancient Russian life, woven from the aroma of ripe cherries, sonorous children's voices and sincere joy. This holiday usually takes place in the countryside, in a small village, where houses with carved architraves and gardens full of cherry trees evoke a feeling of peace and warmth.</p>
+                
+                <p>The uniqueness of Vishnevarov lies in its close connection with local culture and traditions. A holiday can include many elements:</p>
+                
+                <ul>
+                    <li><strong>Cherry tastings and fair:</strong> The central event is often a tasting of freshly picked cherries prepared according to ancient recipes. At the fair, you can find homemade sweets, jams, wines and other gifts of the local nature. Perhaps master classes on making cherry jam or baking are offered.</li>
+                    
+                    <li><strong>Folk festivals:</strong> Vishnevarovo involves fun and entertainment. The program may include folk games, dances, contests and performances by local folklore groups. There are songs performed to the accompaniment of ancient musical instruments. This is an opportunity to plunge into the flavor of Russian folk art.</li>
+                    
+                    <li><strong>Family traditions:</strong> The holiday unites families and communities, creating an atmosphere of family relaxation and joy. Children participate in contests and games, while adults share memories and support the traditions of their ancestors.</li>
+                    
+                    <li><strong>Cultural program:</strong> Within the framework of Vishnevarov, presentations of local history, exhibitions of folk crafts, stories about life in ancient villages, acquaintance with local legends and legends can take place. This is an opportunity to learn about the history and culture of the place where the celebration takes place.</li>
+                </ul>
+                
+                <p>In general, Vishnevarovo is not just a delicious holiday, it is an opportunity to get acquainted with the rich history and culture, as well as enjoy the beauty of nature and sincere communication with people. It is a memory of the past that has come alive in the present, and the promise of a bright future that fills the heart with a sense of unity with the roots.</p>
+            </div>
+            
+            <button class="start-btn" onclick="startQuiz()">
+                Start Quiz
+                <span class="arrow">→</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Слайды с вопросами -->
+    <div id="quizSlides" class="quiz-slides" style="display: none;">
+        <div class="quiz-container">
+            <!-- Кнопка возврата к тексту -->
+            <button class="back-to-text-btn" onclick="backToText()">
+                ← Back to text
+            </button>
+            <div class="question-counter" id="questionCounter">1/7</div>
+            
+            <!-- Вопрос -->
+            <div class="question-box">
+                <p class="question-text" id="questionText"></p>
+                <span class="emoji">😊</span>
+            </div>
+            
+            <div class="answer-options">
+                <button class="answer-btn" id="trueBtn" onclick="checkAnswer(true)">
+                    <span class="check-icon"></span>
+                    True
+                </button>
+                <button class="answer-btn" id="falseBtn" onclick="checkAnswer(false)">
+                    <span class="check-icon"></span>
+                    False
+                </button>
+            </div>
+            
+            <!-- Кнопка следующего вопроса -->
+            <button class="next-btn" id="nextBtn" onclick="nextQuestion()" style="display: none;">
+                Next Question →
+            </button>
+        </div>
+    </div>
+
+    <!-- Финальное popup окно -->
+    <div id="finalPopup" class="final-popup">
+        <div class="popup-content">
+            <div class="popup-emoji">🎉</div>
+            <h2 class="popup-title">Fabulously!</h2>
+            <p class="popup-text">You've completed all questions successfully!</p>
+            <button class="menu-btn" onclick="goToMenu()">
+                Back to Menu
+            </button>
+        </div>
+    </div>
+
+    <script src="holidays.js"></script>
+</body>
+</html>

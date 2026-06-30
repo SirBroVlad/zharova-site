@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outstanding People - The Bird of Happiness</title>
+    <link rel="stylesheet" href="../game-styles.css">
+    <link rel="stylesheet" href="people.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="task-page people-page">
+    <!-- Фоновое изображение -->
+    <div class="game-background">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="people-container">
+        <h1 class="people-title">OUTSTANDING PEOPLE</h1>
+        
+        <div class="instruction">
+            <p>Match the portraits with their professions:</p>
+        </div>
+
+        <!-- Подписи для перетаскивания -->
+        <div class="labels-container" id="labelsContainer">
+            <!-- Будут добавлены через JS -->
+        </div>
+
+        <!-- Фотографии с зонами для сброса -->
+        <div class="photos-grid" id="photosGrid">
+            <!-- Будут добавлены через JS -->
+        </div>
+
+        <button class="check-btn" onclick="checkMatches()">
+            ✓ Check
+        </button>
+
+        <div class="result-message" id="resultMessage"></div>
+
+        <div class="navigation-buttons">
+            <a href="../index.html" class="nav-btn home">Back to menu</a>
+        </div>
+    </div>
+
+    <!-- Lightbox для просмотра фото -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Финальное popup -->
+    <div id="finalPopup" class="final-popup">
+        <div class="popup-content">
+            <div class="popup-emoji">🎉</div>
+            <h2 class="popup-title">Fabulously!</h2>
+            <p class="popup-text">You've completed all questions successfully!</p>
+            <button class="menu-btn" onclick="goToMenu()">
+                Back to Menu
+            </button>
+        </div>
+    </div>
+
+    <script src="people.js"></script>
+</body>
+</html>
